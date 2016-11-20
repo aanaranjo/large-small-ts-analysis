@@ -14,3 +14,9 @@ Get_GC_Content <- function(houseelf_earlength_dna){
   gc_content <- (Gs +Cs) / str_length(seq_upper) *100
   return(gc_content)
 }
+
+get_ear_length <- function(seq){
+    #Calculate the GC-content for one or more sequences
+    ear_lengths <- ifelse(seq > 10, "large", "small")
+    return(ear_lengths)
+}
