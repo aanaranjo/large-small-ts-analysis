@@ -3,19 +3,9 @@
 houseelf_earlength_dna <- read.csv("houseelf-earlength-dna-data-1.csv")
 #Commit 2 was to add CSV
 
-
-#Pushing Changes
-
-
-
-
-
-
-
-
 #Get GC Content
 library(stringr)
-library(ggplot)
+library(ggplot2)
 
 Get_GC_Content <- function(houseelf_earlength_dna){
   seq_upper <- str_to_upper(houseelf_earlength_dna)
